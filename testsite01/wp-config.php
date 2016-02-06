@@ -26,13 +26,13 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'testsite01');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'username_here');
+define('DB_USER', 'root');
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', 'root');
 
 /** MySQL のホスト名 */
 define('DB_HOST', 'localhost');
@@ -81,7 +81,7 @@ $table_prefix  = 'wp_';
  *
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
 
