@@ -81,8 +81,13 @@ $table_prefix  = 'wp_';
  *
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
+if (WP_DEBUG) { // デバッグモードの時だけ
+	define('WP_DEBUG_LOG', true); // debug.log ファイルに記録
+	define('WP_DEBUG_DISPLAY', false); // ブラウザ上に表示しない
+	@ini_set('display_errors',0); // ブラウザ上に表示しない
+}
 /* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
 
 /** Absolute path to the WordPress directory. */
