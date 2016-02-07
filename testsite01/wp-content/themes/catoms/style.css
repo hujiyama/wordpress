@@ -1,0 +1,971 @@
+@charset "UTF-8";
+
+/*
+Theme Name:     FUJIYAMA WEBDESIGN SERVICE
+Theme URI:      http: //s-fujiyama.com
+Description:    theme for client/FWS
+Author:         hujiyama seiji
+Author URI:     http: //s-fujiyama.com
+
+*/
+
+/*  Rest of CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-style:normal;
+font-weight: normal;
+font-size: 100%;
+vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+html{
+overflow-y: scroll;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+
+input, textarea,{
+margin: 0;
+padding: 0;
+}
+
+ol, ul{
+list-style:none;
+}
+
+table{
+border-collapse: collapse; 
+border-spacing:0;
+}
+table{width: 100%;background-color: #F7F7F7;border: 1px solid #DDD;
+
+}
+tr{ 
+
+}
+table td{padding:10px; text-align: left;border: 1px solid #DDD;
+
+}
+table td:first-child {background-color: #F7F7F7;
+    width : 200px ;
+    text-align : left ;
+    border-left : none ;
+    font-weight : bolder ;
+    vertical-align : top ;
+}
+
+table td:first-child + td {
+}
+
+table tr:first-child > td:first-child, table tr:first-child > td:first-child + td {
+}
+
+caption, th{
+text-align: left;
+}
+
+a:focus {
+outline:none;
+}
+
+.clearfix:after {
+content: "."; 
+display: block;
+clear: both;
+height: 0;
+visibility: hidden;
+}
+
+.clearfix {
+min-height: 1px;
+}
+
+* html .clearfix {
+height: 1px;
+/*¥*//*/
+height: auto;
+overflow: hidden;
+/**/
+}
+
+.both{
+clear:both;
+}
+
+.inline_block {  
+display: inline-block;  
+*display: inline;  
+*zoom: 1;  
+}
+
+
+
+/****************************************
+
+General Setting
+
+*****************************************/
+
+html, body {
+margin: 0;
+padding: 0;
+  height: 100%;
+}
+
+body {
+color: #333;
+font-size: 14px;
+font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"MP Pゴシック","MS PGothic",sans-serif;
+line-height: 160%;
+word-break: break-all;
+}
+
+
+
+/****************************************
+
+Typography
+
+*****************************************/
+h1{
+font-weight: normal;
+
+}
+
+h2, h3, h4, h5, h6{
+font-weight: normal;
+margin-bottom:10px;font-size: 12px;
+}
+#main-pages h2{ font-size: 30px; margin-bottom: 30px;}
+#main-pages h2 a{ color: #6F5499!important; font-weight: bold; }
+
+
+h1 {
+margin-bottom: 10px;
+font-size: 240%;
+}
+
+blockquote{
+margin-bottom: 2em;
+margin-left: 20px;
+padding-left: 20px;
+border-left: 3px solid #333;
+}
+
+
+/****************************************
+
+List
+
+*****************************************/
+
+ul,ol {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+ul ul{
+margin-left: 1em;
+}
+
+
+/****************************************
+
+Link
+
+*****************************************/
+
+a {
+
+color: #333;
+text-decoration: none;
+}
+
+a:hover {
+
+color:#59437A; text-decoration:none;
+}
+
+
+#container {
+    width: 100%;
+    position: relative;
+    height: auto !important;    
+    height: 100%;
+    min-height: 100%;
+}
+ 
+
+#footer { background:#6F5499; text-align:center;
+ 
+    bottom: 0;
+    width: 100%; height:50px;
+
+}
+
+/****************************************
+
+   footer fixed
+
+*****************************************/
+
+#main-pages{  float:right; padding-bottom:150px;
+width: 650px;}
+
+#main-single {
+float: right;
+width: 650px; display:block; padding-bottom:150px;
+}
+
+#sidebar {padding-bottom:150px;
+}
+
+#content{ padding-bottom:50px;}
+
+.contents-wrap {
+  margin-top:50px;
+}
+ 
+
+/****************************************
+
+Layout
+
+*****************************************/
+#container,
+.wrapper {
+margin: 0 auto;
+width: 940px;
+}
+
+
+#header {
+
+padding-top: 0px;
+border-bottom: 0px solid #ddd;border-top: 2px solid #ddd;
+
+ box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  background-color: #f7f7f7;
+  z-index: 6100;
+}
+#header .alignleft,
+#header .alignright{
+margin-bottom: 20px;
+width: auto;
+}
+#header .alignright{
+width: 200px;
+}
+
+img{max-width:100%;height:auto; border:0px;}
+
+a img{
+border-style:none;
+}
+a:hover img{
+opacity:0.8;
+filter: alpha(opacity=80);
+-ms-filter: "alpha( opacity=80 )";
+}
+
+
+
+
+#sidebar {
+float: left;
+width: 250px;border-right: 1px solid #ddd;
+}
+
+#main-single,
+#sidebar{
+margin-bottom: 59px;
+border-bottom: 1px solid transparent;
+}
+#main-pages{
+margin-bottom: 59px;
+border-bottom: 1px solid transparent;
+}
+
+#footer {
+clear: both;
+ background:#59437A;  
+color: #fff; display: block; 
+}
+
+
+/****************************************
+
+header
+
+*****************************************/
+
+*:first-child+html #header > div{ /* IE7 */
+clear: both;
+zoom:1;
+}
+
+#logo{
+
+}
+
+#logo a{
+border: none;
+}
+
+#description {
+margin-top: 0;
+color: #777;
+}
+
+#searchform{
+position: relative;
+margin-top: 45px;
+
+}
+#s{
+padding: 6px 20% 6px 5%;
+width: 75%;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+font-size: 14px;
+}
+#searchsubmit{
+position: absolute;
+top: 0;
+right: 0;
+width: 30px;
+height: 26px;
+border: none;
+background: url(images/search.png) no-repeat 50% 50%;
+
+}
+#Hader-image{}  
+
+
+/****************************************
+
+Navigation
+
+*****************************************/
+
+
+
+#header .menu{
+position: relative;
+bottom: 0px;
+clear: both;
+
+ width: 940px;
+}
+#header div.menu > ul,
+#header ul.menu{
+
+}
+
+#header div.menu > ul > li,
+#header ul.menu > li{
+float: left;
+}
+
+#header .menu li{
+position: relative;
+
+
+
+}
+
+#header .menu li .current_page_parent {
+position: relative;
+border-top: 1px solid #ddd;
+border-right: 1px solid #ddd;
+border-bottom: 1px solid #ddd; background:#6F5499; color:#fff;
+
+}
+
+
+#header .menu li a{
+display: block;
+padding: .9em 1em;
+border-bottom: none; font-size: 14px; font-weight: bold;
+}
+#header .menu li a:hover{
+display: block;
+padding: .9em 1em;
+border-bottom: none; font-size: 14px; font-weight: bold;
+}
+#header .menu li.current_page_item a{ color:#6F5499; }
+
+#header div.menu > ul > li.current_page_item,
+#header ul.menu > li.current_page_item{ color:#6F5499; }
+
+#header ul.sub-menu,
+#header ul.children{
+position: absolute;
+left:-1px;
+display: none;
+margin-left: 0;
+width: auto;
+width: 150px;
+border: 1px solid #ddd;
+background: #eee;
+}
+
+#header .sub-menu li,
+#header .children li{
+position: relative;
+border: none; 
+}
+
+#header ul.sub-menu ul,
+#header ul.children ul {
+top:-1px;
+left:150px;
+}
+#header .menu li:hover > ul{
+display: block; background:#fff;
+}
+#header .menu li:hover > ul li:hover{
+display: block; background:#6F5499;
+}
+
+
+/****************************************
+
+header image
+
+*****************************************/
+
+#header-image{
+margin-bottom: 40px;
+}
+
+
+/****************************************
+
+Breadcrumb
+
+*****************************************/
+
+#breadcrumb{
+margin-bottom: 20px;
+}
+#breadcrumb li{
+float: left;
+margin-right: .5em;
+}
+
+
+/****************************************
+
+Main
+
+*****************************************/
+
+#main-single .post,
+#main-single .page{
+overflow: hidden;
+margin-bottom: 59px;
+border-bottom: 1px solid transparent;
+}
+/*カスタム投稿用*/
+#main-single .gallery{overflow: hidden;
+margin-bottom: 59px;
+border-bottom: 1px solid transparent;}
+
+
+.sticky{
+/* 先頭固定ポストのスタイル */
+}
+
+.post-meta{
+margin-bottom: 1.5em;
+}
+.post-meta .post-date,
+.post-meta .category{
+padding-right: 1em;
+}
+.comment-num{ white-space: nowrap; }
+.more-link{
+
+}
+
+.navigation{
+overflow: hidden;
+margin-bottom: 40px;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+background: url(images/gray.gif) repeat-y 50% 0;
+}
+.navigation > div{
+width: 50%;
+}
+
+.navigation .alignright{
+text-align: right;
+}
+
+.navigation a{
+display: block;
+padding: 1em;
+border: none;
+}
+.navigation a:hover{
+background: #6F5499;
+color: #fff;
+}
+.navigation .alignright a:hover{
+border-left: 1px solid #ddd;
+}
+
+.footer-post-meta{
+margin-top: 40px;
+text-align: right;
+}
+.post-author{ padding-left: 1em; }
+
+.page-link{
+margin: 3em 0;
+}
+.comment-page-link{
+margin: 0 0 3em;
+}
+
+.page-link span,
+.comment-page-link span,
+.comment-page-link a{
+display: inline-block;
+margin-right: 3px;
+padding: 5px 8px;
+border: 1px solid #ddd;
+background: #ddd;
+}
+.page-link a span,
+.comment-page-link a{
+background: #fff;
+}
+
+.page-link a{
+border-bottom: none;
+color: #333;
+}
+
+.page-link a span:hover,
+.comment-page-link a:hover{
+background: #ffeff7;
+color: #333;
+}
+
+
+/****************************************
+
+Comments Area
+
+*****************************************/
+
+#comment-area{border-top: 1px solid #333; margin-bottom:10px; padding-top:10px;}
+#comment-area h3{
+font-size: 150%;
+
+}
+
+.required{ color: #333;}
+
+.commets-list,
+.trackback-list{
+overflow: hidden;
+margin-top: -20px;
+margin-bottom: 40px;
+}
+.commets-list li,
+.trackback-list li{
+overflow: hidden;
+margin-top: -1px;
+padding: 20px 0 0;
+width: 100%;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid transparent;
+}
+.commets-list .avatar{
+float: left;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+.comment-meta,
+.reply,
+.comment-notes,
+.form-allowed-tags,
+span.small{
+font-size: 80%;
+}
+
+.comment-body p{
+clear: both;
+}
+.reply{
+text-align: right;
+}
+
+.bypostauthor{
+/* 記事投稿者のコメントのスタイル */
+}
+
+.children{
+padding-left: 2em;
+}
+
+#respond{
+margin-bottom: 40px;
+}
+
+/****************************************
+
+index.php Main
+
+*****************************************/
+
+.content-box{
+float: right;
+margin-top: -0.25em;
+width: 420px;
+}
+.content-box .more-link{
+margin: 0;
+}
+
+.thumbnail-box{
+float: left;
+width: 160px;
+}
+.thumbnail-box img{
+width: 160px;
+height: 160px;
+}
+
+
+/****************************************
+
+Sidebar
+
+*****************************************/
+
+#sidebar h2{
+margin-bottom: 20px;border-bottom: 1px solid #ddd; margin-right: 10px;
+
+}
+.widget{
+margin-bottom: 0px;
+}
+
+#sidebar .widget ul{
+padding-left: 0em;
+list-style-position: outside;
+list-style-type: disc;
+}
+
+ ul{
+text-decoration: none;
+}
+li{list-style-type: none; padding:5px 15px 5px 0;}
+
+
+#sidebar .widget li a .icon-angle-right {
+  margin-right: -15px;
+  float: right;
+  font-size: 1.2em; 
+
+}
+a [class^="icon-"], a [class*=" icon-"], a [class^="icon-"]:before, a [class*=" icon-"]:before {
+  display: inline;
+}
+#sidebar-recent-posts li,
+#sidebar-popular-posts li{
+margin:20px 0;
+}
+
+.sidebar-thumbnail-box{
+float: left;
+width: 75px;
+}
+
+.sidebar-recent-posts-title{
+float: right;
+width: 165px;
+}
+#sidebar-recent-posts h3,
+#sidebar-recent-posts p,
+#sidebar-popular-posts h3,
+#sidebar-popular-posts p{
+margin: 0;
+}
+
+.tagcloud a{
+white-space: nowrap;
+}
+
+
+/****************************************
+
+Footer
+
+*****************************************/
+
+#copyright{
+
+font-size: 80%;
+}
+
+
+/****************************************
+
+Form
+
+*****************************************/
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+textarea {
+margin: 0;
+margin-bottom: 20px;
+padding: 6px 4px;
+max-width: 100%;
+width: 290px;
+outline: none;
+border: 1px solid #ddd;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+color: #333;
+vertical-align: bottom;
+font-size:14px;
+}
+
+#comment-area input[type="text"],
+#comment-area textarea{
+display: block;
+}
+
+input[textarea] {
+overflow: auto;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+border: 1px solid #6F5499;
+background: #fff;
+
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+color: #444;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+
+/* Old browsers */
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+
+
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+
+}
+
+
+/****************************************
+
+WordPress Misc
+
+*****************************************/
+
+.aligncenter {
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+
+.alignleft {
+float: left;
+}
+
+.alignright {
+float: right;
+}
+
+.wp-caption {
+margin: 10px 0;
+
+border: 1px solid #ddd;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+background-color: #6F5499; color:#FFFFFF;
+text-align: center; max-width:100%;height:auto;
+
+}
+
+.wp-caption-text,
+.gallery-caption{
+font-size: 80%; text-align:left; padding:5px;
+}
+
+.wp-caption img {
+margin: 0;
+padding: 0;
+border: 0 none;
+}
+
+.wp-caption-dd {
+margin: 0;
+padding: 0 4px 5px;
+font-size: 14px;
+line-height: 17px;
+}
+
+img.alignright {
+display: inline-block;
+margin: 0 0 1em 1.5em;
+}
+
+img.alignleft {
+display: inline-block;
+margin: 0 1.5em 1em 0;
+}
+
+
+
+
+/****************************************
+
+Clearfix
+
+*****************************************/
+
+#container:after,
+#header .menu > ul:after,
+#header ul.menu:after,
+.clearfix:after {
+display: block;
+visibility: hidden;
+clear: both;
+height: 0;
+content: " ";
+font-size: 0;
+}
+
+/* clearfix for ie7 */
+#container,
+#header .menu > ul,
+#header ul.menu,
+.clearfix {
+display: inline-block;
+}
+
+#container,
+#header .menu > ul,
+#header ul.menu,
+.clearfix {
+display: block;
+}
+
+
+/****************************************
+
+Scroll OPEN
+
+*****************************************/
+#acMenu  dl, dt, dd {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+
+}
+
+#acMenu dt{
+display:block;
+
+height:50px;
+line-height:50px;
+text-align:center;
+border:#ccc 1px solid;
+cursor:pointer;
+background:url(images/swich.png) 570px -69px no-repeat;
+padding-right:15px; 
+}
+
+#acMenu dd{ margin-top:20px;
+width:100%;
+height: auto;
+display:none;
+}
+
+#acMenu dt.active{
+background:url(images/swich.png) 570px 18px no-repeat;
+}
+
+/****************************************
+
+smartphone
+
+*****************************************/
+
+
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
+}
+

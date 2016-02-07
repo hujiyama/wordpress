@@ -1,0 +1,87 @@
+
+/*クイック編集画面*/
+.inline-edit-col
+{display: none;}
+
+/*クイック編集画面　ラジオボタン*/
+.inline-edit-tags{ padding: 5px;}
+
+
+.inline-edit-categories-label.title
+{font-size: 14px; font-weight: bold; margin: 10px 0!important;}
+
+#posts-filter .row-title{display: none;}
+
+.post-state{display:none!important;}
+
+#custom-quick-tag
+input[type="radio"], input[type="checkbox"] {
+  margin: 0px 5px 0!important;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+li.trash{display: none!important;}
+
+#mytaxonomy_id{display: none!important;}
+
+.editinline{display: none;}
+
+.delete{display:none!important;}
+
+#the-comment-list .vim-u{display: none;}
+#the-comment-list .vim-s{display: none;}
+#the-comment-list .edit{display: none;}
+
+#wp-admin-bar-edit-profile{display: none;}
+#wpadminbar #wp-admin-bar-user-info .display-name{display: none;}
+#wpadminbar #wp-admin-bar-user-info .username{display: none;}
+
+.tablenav .bulkactions{display: none;}
+
+.attachments-browser .attachments, .attachments-browser .uploader-inline {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 300px;
+    bottom: 0px;
+    overflow: auto;
+    outline: 0px none;
+    display: none!important;
+}
+
+div.ab-sub-wrapper
+
+.only01{display: none!important;}
+.only02{display: none!important;}
+.only03{display: none;}
+.only04{display: none;}
+.only05{display: none;}
+.only06{display: none;}
+.only07{display: none;}
+.only08{display: none;}
+.only09{display: none;}
+.only10{display: none;}
+.only11{display: none;}
+.only12{display: none;}
+.only13{display: none;}
+.only14{display: none;}
+.only15{display: none;}
+.only16{display: none;}
+.only17{display: none;}
+.only18{display: none;}
+.only19{display: none;}
+.only20{display: none;}
+.only21{display: none;}
+.only22{display: none;}
+.only23{display: none;}
+.only24{display: none;}
+.only25{display: none;}
+
+
+/*一覧でビューを開く*/
+/*#the-list .view{display: none;}*/
+
+
+
+

@@ -1,0 +1,2179 @@
+@charset "UTF-8";
+
+/*
+Theme Name:     FUJIYAMA WEBDESIGN SERVICE
+Theme URI:      http: //s-fujiyama.com
+Description:    theme for client/FWS
+Author:         hujiyama seiji
+Author URI:     http: //s-fujiyama.com
+css:            wp_custom_admin_css
+*/
+
+
+/*
+* body html
+
+* menu
+
+* profile
+
+* edit area
+クイックタグ関係はcustom-admin-cssへ記述
+
+* list up
+
+* table
+
+* link
+
+* font
+
+* option
+
+* BOX clolums etc
+
+* PLUGINS
+
+* footer
+
+*comment
+
+/*#misc-publishing-actions{
+	display: none!important;
+}*/
+
+
+/*meta box publish area*/
+
+/*公開タイトル
+#submitdiv h3{display: none!important;}
+
+#minor-publishing-actions{display: none!important;}
+
+#submitdiv .custom_title{line-height: 1.4; font-size: 14px; padding: 10px; font-weight: bold;}
+
+*/
+body, html { 
+  height: 0%!important;
+  margin: 0;
+  padding: 0;
+/*   background-color:#fff!important;*/
+
+font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"MP Pゴシック","MS PGothic",sans-serif;
+line-height: 160%;
+
+
+   color: #fff!important; 
+background: url('bg.jpg') no-repeat center center fixed;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.subsubsub a .count, .subsubsub a.current .count {
+  color: rgb(153, 153, 153); 
+  font-weight: 400;
+}
+.subsubsub {
+  list-style: none;
+  margin: 8px 7px 8px; padding-left: 5px;
+
+  font-size: 13px;
+  float: left;
+  color: rgb(102, 102, 102); background-color: #fff; border-radius: 4px;
+    border: 1px solid #B3B3B3;
+}
+.tablenav .tablenav-pages {
+  float: right;
+  display: block;
+  cursor: default;
+  height: 30px;
+  color: rgb(85, 85, 85);
+  line-height: 30px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+#wp-admin-bar-preview{display: none!important;}
+.screen-options{ position: relative;  
+    top: 0px; 
+    left: 0px; height: 0px;}
+
+    .screen-options span {font-size: 12px; margin-left: 5px; padding-right: 5px; color: #333; }
+ 
+.option-counts{ position: relative; margin-right: 5px; float: right; top: 207px; margin-top: -100px; 
+   }
+
+ .option-counts> .button {font-size: 12px; margin-left: 5px;}
+.view-switch{display: none!important;}
+/*表示オプション*/
+#screen-meta{display: block!important;}
+
+.tablenav{margin-bottom: 10px;padding:0 0 10px 7px; }
+
+.tablenav-pages .current-page {
+  padding-top: 0;
+  text-align: center; height: 28px;
+}
+
+.tablenav-pages input[type=text]{border: 0px solid ;}
+input, select {
+  margin: 1px;
+  padding: 0px;
+}
+#current-page-selector{ font-size: 15px; color: #666;}
+
+.tablenav .tablenav-pages a {height: 23px;
+  padding: 0 10px 3px;
+  background: #eee;
+  background: rgba(0,0,0,.05);
+  font-size: 20px;
+  font-weight: 400;
+   border: 1px solid #ddd;
+}
+
+
+input #current-page-selector { line-height: 20px!important; }
+.total-pages{   }
+
+
+#doaction, #doaction2, #post-query-submit {
+  margin: 1px 0 0 0;
+}
+
+#posts-filter{background-color: rgb(248, 248, 248); }
+.tablenav-pages input[type="text"] .current-page-selector{width: 20px!important; }
+.tablenav-pages .displaying-num{font-size: 14px;}
+.tablenav-pages {}
+
+.tablenav-pages {}
+.tablenav-pages {}
+
+#comments-form{background-color: rgb(248, 248, 248); }
+/*左から table ナビゲーション*/
+.first-page { border-top-left-radius: 50px;border-bottom-left-radius: 50px;
+}
+
+.prev-page{border-radius: 0px;}
+/*中の文字*/
+.paging-input{ font-size: 14px; padding-bottom: 10px;}
+
+.next-page{border-radius: 0px;}
+
+.last-page{ border-top-right-radius: 50px;border-bottom-right-radius: 50px;}
+
+
+/** menu*/
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:after {
+  right: 0;
+  border: 8px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #f1f1f1;
+  top: 50%;
+  margin-top: -8px;
+  background-color: none!important; width: 250px; 
+  height: auto; 
+}
+
+
+#admin-custom-menu{
+  width: 250px; 
+  height: auto; 
+
+  background-color: rgb(37, 50, 69)!important;
+
+  z-index: 99999!important;
+  padding-bottom: 32768px; 
+  margin-bottom: -32768px;
+
+}
+
+.feature-filter, .imgedit-group, .popular-tags, .stuffbox, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+  background: rgb(255, 255, 255);
+}
+
+.tablenav .tablenav-pages a.disabled, .tablenav .tablenav-pages a.disabled:active, .tablenav .tablenav-pages a.disabled:focus, .tablenav .tablenav-pages a.disabled:hover {
+  color: rgb(170, 170, 170);
+  background: rgb(255, 255, 255);
+}
+.tablenav .tablenav-pages a {
+  height: 23px;
+  padding: 0 10px 3px;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+#admin-custom-menu .wp-menu-name{
+  font-size: 14px!important;
+}
+#admin-custom-menu a:{
+  font-size: 14px!important;
+}
+
+#adminmenu a {
+  display: block;
+  line-height: 18px;
+ padding: 2px 0px;
+
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu {
+  background: #00CCCC;
+ 
+}
+#adminmenu :hover{ background: #00CCCC; color: #333;}
+
+#adminmenu .wp-submenu li {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden; color: #333;
+}
+
+#adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top > a:focus {
+    color: #333;
+}
+
+
+#admin
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+a.button,
+.wrap .add-new-h2 {
+  padding: 2px 10px;
+  font-size: 11.9px;
+}
+#wp-admin-bar-view{display: none!important;}
+
+#delete_all{display: none!important;}
+
+.inline-edit-author{display: none!important;}
+
+#authordiv.postbox {display: none!important;}
+.search-box{display: none;}
+p.search-box {
+    float: right;
+    margin: 0px;
+}
+
+#wp-logo-custom{}
+.ab-icon-custom-logo{ padding-top: 20px; color: #000;  display: block; background-image: url('logo.png'); }
+
+
+@media only screen and (max-width:769px) {
+
+   #wp-logo-custom{display: none;}
+
+
+.ab-icon-custom-logo{ padding-top: 0px; color: #000; font-size: 30em!important; display: none!important;}
+
+#wpwrap {
+  height: auto;
+  min-height: 100%;
+
+  position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
+overflow-x:scroll;
+}
+#wp-admin-bar-my-account{display: none!important;}
+
+}
+
+
+.wp-has-submenu{  padding: 10px 0;
+  border-top: 1px solid #131937;
+  min-height: 34px;
+  position: relative;
+}
+
+#wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input {
+    height: 32px;
+    display: block;
+    padding: 0px 0px!important;
+    margin: 0px;
+}
+
+
+#collapse-menu{display: none;}
+
+#post-body-content{}
+
+
+
+ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:after {
+  right: 0;
+  border: 8px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #f1f1f1; 
+  top: 50%;
+  margin-top: -8px;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu {
+  
+}
+h2 {
+  color: #fff!important;
+ font-size: 30px;
+ font-weight: 400;
+  padding: 20px 15px 4px 0px;
+  margin-bottom: 20px; margin-top: 28px!important;
+  line-height: 29px;
+}
+
+.wrap h2 {
+  color: rgb(63,81,181 );
+ font-size: 30px;
+ font-weight: 400;
+  padding: 20px 15px 4px 0;
+  margin-bottom: 20px;margin-top: 28px;
+  line-height: 29px;
+}
+
+.customtit{margin: .5em 0;
+  padding: 2px;}
+
+
+#profile-page {}
+
+#profile-page label { color: #fff;}
+
+  #profile-page h3 {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 1em 0px;
+}
+
+
+.form-table{}
+  #edit-slug-box .button{display: none;}
+}
+
+
+
+  
+#titlewrap{margin-top: 1px;}
+
+#message_area{
+  display: block; color: #333!important;
+ position: relative!important;
+  top: -70px!important;
+  margin-bottom: -71px!important;
+  background-color: #fff;
+  padding: 20px!important;
+  border-left: 5px solid #1B234C;
+border: 1px solid #ddd;}
+
+
+.columns-right .sidebox h3 {
+    padding: 10px;
+    margin: 0px;
+    color: #333;
+}
+
+.columns-right .sidebox {
+    background: none repeat scroll 0px 0px #FFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 0px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 14px;
+      color: #333;
+}
+
+div.acf-box {color: #333!important;}
+div.inner h2{color: #333!important;}
+
+.form-table td p {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.acf-box .title h3 {
+    font-size: 14px;
+    line-height: 1em;
+    margin: 0px;
+    padding: 0px; color: #333;
+}
+.form-table th, .form-wrap label {
+     color: #fff!important;
+    font-weight: 400;
+    text-shadow: none;
+    vertical-align: baseline;
+}
+
+.form-table th label {
+     color: #fff!important;
+    font-weight: 400;
+    text-shadow: none;
+    vertical-align: baseline;
+}
+
+#acf-export-field-groups{color: #333;}
+#poststuff .form-table th {
+     color: #333!important;
+    font-weight: 400;
+    text-shadow: none;
+    vertical-align: baseline;
+}
+
+.postbox-container #donationbox .inside {
+    padding: 6px 10px 10px;
+    color: #333;
+}
+.postbox, .stuffbox {
+    margin-bottom: 20px;
+    padding: 0px;
+    line-height: 1;color: #333!important;
+}
+
+.currently-editing{color: #333;}
+.widgets-holder-wrap .description {
+    padding: 0px 0px 15px;
+    margin: 0px;
+    font-style: normal;
+    color: #fff;
+}
+#available-widgets .widget-description, #widgets-right a.widget-control-edit, .in-widget-title {
+    color: #fff;
+}
+.sidebar-name h3 {
+     color: #333;
+}
+#post-body-content h3 {
+     color: #333;
+}
+.manage-menus span{
+     color: #333;
+}
+.nav-menus-php #post-body {
+    padding: 0px 10px 10px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #DFDFDF;
+    background: none repeat scroll 0% 0% #FFF;
+    color: #333;
+  }
+#add-custom-links h3{
+    color: #333;
+}
+#add-category h3{
+    color: #333;
+}
+#templateside{ background-color: #fff;}
+#templateside h3{ padding-left: 10px;
+    color: #333;
+}
+
+
+h2.nav-tab-wrapper, h3.nav-tab-wrapper {
+    border-bottom: 0px solid #CCC;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+#menu-management .menu-edit, #menu-settings-column .accordion-container, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+    border: 1px solid #E5E5E5; background-color: #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.04);
+}
+#menu-management .menu-edit, #menu-settings-column .accordion-container, .feature-filter, .imgedit-group, .manage-menus, .menu-item-handle, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+    border: 1px solid #E5E5E5;
+    background-color: #FFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.04);
+    color: #333;
+}
+
+.js .control-section .accordion-section-title:focus, .js .control-section .accordion-section-title:hover, .js .control-section.open .accordion-section-title, .js .control-section:hover .accordion-section-title {
+    color: #333;
+    background: none repeat scroll 0% 0% #F5F5F5;
+}
+
+.form-wrap p, p.description, p.help, span.description {
+    font-size: 13px;
+    font-style: italic;
+    color: #fff; color: #333;
+}
+
+#your-profile
+.user-rich-editing-wrap,
+.user-admin-color-wrap,
+.user-comment-shortcuts-wrap,
+.user-admin-bar-front-wrap{display: none;}
+
+
+.categorydiv div.tabs-panel, .customlinkdiv div.tabs-panel, .posttypediv div.tabs-panel, .taxonomydiv div.tabs-panel, .wp-tab-panel {
+    min-height: 42px;
+    max-height: 200px;
+    overflow: auto;
+    padding: 0px 0.9em;
+    border: 1px solid #DFDFDF;
+    background-color: #FDFDFD;
+}
+
+.default-category{display: none;}
+
+#progression_status .inside{  min-height: 42px;
+    
+    overflow: auto;
+    padding: 0px 0em; margin: 10px 10px;
+    border: 1px solid #DFDFDF;
+    background-color: #fff;}
+
+.add-new-h2{display: none;}
+
+#quick_edit_custom_fujiyama .inside{  min-height: 42px;
+    max-height: 200px;
+    overflow: auto;
+    padding: 0px 0em; margin: 10px 10px;
+    border: 1px solid #DFDFDF!important;
+    background-color: #fff;}
+
+
+.wp-tab-active, ul.add-menu-item-tabs li.tabs, ul.category-tabs li.tabs {
+  border: 1px solid #dfdfdf;
+  border-bottom-color: #fdfdfd;
+  background-color: #fff!important;
+}
+
+.categorydiv div.tabs-panel, .customlinkdiv div.tabs-panel, .posttypediv div.tabs-panel, .taxonomydiv div.tabs-panel, .wp-tab-panel {
+  min-height: 42px;
+  max-height: 200px;
+  overflow: auto;
+  padding: 0px 0.9em;
+  border: 1px solid #DFDFDF;
+    background-color: #fff!important;
+}
+
+
+
+
+/*編集画面edit area*/
+#post-body-content, .edit-form-section {
+    margin-bottom:0px!important;
+}
+
+.wp-menu-separator{display: none;}
+
+.dashicons-option{display: none;}
+
+/*edit area -　Indication for External******************************************************/
+
+
+#wp-content-editor-tools {
+background-color: #fff;
+  padding: 5px;
+    border-top:1px solid rgb(230, 230, 230);
+     border-left:1px solid rgb(230, 230, 230);
+      border-right:1px solid rgb(230, 230, 230);
+}
+
+.wp-media-buttons .button {
+   margin-top: 5px!important;
+  margin-right: 5px;
+  margin-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+table.fixed {
+  table-layout: fixed; 
+  border:1px solid rgb(230, 230, 230);
+box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-webkit-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-moz-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+
+}
+
+#this-list-only{}
+
+
+/*一覧リスト*/
+.tablenav .top{margin:30px 0; padding: 20px; position: 
+  border:1px solid rgb(230, 230, 230);
+box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-webkit-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-moz-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px; }
+
+#the-list{}
+
+/*#posts-filter .row-title{display: none;}*/
+
+.trash{}
+
+/*投稿者以外にが見えるカテゴリー用*/
+.only{display: none;}
+.only1{display: none;}
+.only2{display: none;}
+.only3{display: none;}
+.only4{display: none;}
+.only5{display: none;}
+.only6{display: none;}
+.only7{display: none;}
+.only8{display: none;}
+.only9{display: none;}
+.only9{display: none;}
+.only10{display: none;}
+
+
+
+.widefat thead th.check-column {
+    padding-top: 10px; background-color: rgb(248, 248, 248); color: #777;
+}
+.widefat th.sortable, .widefat th.sorted {
+    padding: 0px; background-color: rgb(248, 248, 248); color: #777;
+}
+.widefat tfoot tr th, .widefat thead tr th {
+     background-color:rgb(248, 248, 248); 
+}
+th.manage-column a, th.sortable a:active, th.sortable a:focus, th.sortable a:hover {
+    color: #333;
+}
+
+/*新規作成ボタン*/
+.add-new-h2{ color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+
+.wrap .add-new-h2, .wrap .add-new-h2:active {
+    margin-left: 4px;
+    padding: 4px 8px;
+    position: relative;
+    top: -3px;
+    text-decoration: none;
+    border: medium none;
+    border-radius: 4px;
+    color: #fff;
+    background: none repeat scroll 0% 0% rgb(153, 0, 0);
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;cursor: pointer;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+
+.wp-core-ui .button-primary {
+  background: #2ea2cc;
+  border-color: #0074a2;
+  -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0;
+}
+ .wp-core-ui .button-secondary {
+  color: #555;
+  border-color: #ccc;
+  background: #f7f7f7;
+  -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+  vertical-align: top;
+    border-radius: 0;
+}
+
+.wp-media-buttons .insert-media {
+  padding-left: 5px;
+  margin-top: 5px; 
+}
+
+
+/*ゴミ箱へ移動*/
+
+#major-publishing-actions .submitdelete{
+margin-top: 5px!important;
+  padding: 7px 3px!important;
+  -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+   border:1px solid rgb(230, 230, 230);
+  vertical-align: top;
+    border-radius: 0;
+}
+
+/*上記と同じ削除関係*/
+#all-plugins-table .plugins a.delete, 
+#media-items a.delete, 
+#media-items a.delete-permanently, 
+#nav-menu-footer .menu-delete, 
+#search-plugins-table .plugins a.delete, .plugins a.delete, .row-actions span.delete a, .row-actions span.spam a, .row-actions span.trash a, .submitbox .submitdelete {
+  color: red;
+  -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+    border:1px solid rgb(230, 230, 230);
+}
+
+
+#all-plugins-table .plugins a.delete:hover, 
+#media-items a.delete-permanently:hover, 
+#media-items a.delete:hover, 
+#nav-menu-footer .menu-delete:hover, 
+#search-plugins-table .plugins a.delete:hover, 
+.file-error, 
+.plugins a.delete:hover, 
+.row-actions .delete a:hover, 
+.row-actions .spam a:hover, 
+.row-actions .trash a:hover, 
+.submitbox .submitdelete:hover, 
+.widget-control-remove:hover, 
+abbr.required {
+  color: #a00; 
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+    border:1px solid rgb(230, 230, 230);
+}
+
+
+#adminmenu 
+.wp-submenu li.current a,
+#adminmenu .wp-submenu li.current a:focus,
+#adminmenu .wp-submenu li.current a:hover,
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+  color: #fff!important;
+}
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active {
+  margin-left: 4px;
+  padding: 4px 8px;
+  position: relative;
+  top: -3px;
+  text-decoration: none;
+  border: medium none;
+  border-radius: 0px!important;
+  color: #fff;
+  background: none repeat scroll 0% 0% rgb(153, 0, 0);
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+  vertical-align: top;
+}
+
+
+.wp-core-ui .button, .wp-core-ui .button-primary, .wp-core-ui .button-secondary {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 26px;
+  height: 28px;
+  margin: 0;
+  padding: 0 10px 1px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  border-radius: 0px!important;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+   border-radius: 4px!important;
+}
+
+
+
+
+/*プルダウンボタン　三角形
+#submitdiv .handlediv{display: none!important;}*/
+/*プレビューボタン*/
+#submitdiv .preview {display: none!important;}
+/*ステータス状態*/
+ .misc-pub-post-status{display: none!important;}
+/*公開状態*/
+#submitdiv .misc-pub-visibility{display: none!important;}
+
+/*公開日時*/
+#submitdiv .curtime, .misc-pub-curtime{display: none!important;}
+
+
+/*公開ボタン
+#major-publishing-actions{display: none!important;}*/
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  width: 200px;
+  background-color: #293b51!important;}
+
+
+background-color: rgb(37, 50, 69)!important;
+
+
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  width: 250px!important;
+  background-color: rgb(11,15,34)!important;}
+
+
+
+
+
+#adminmenu {
+    clear: left;
+    margin: 0px 0px!important;
+    padding: 0px;
+    list-style: outside none none;
+}
+#adminmenu li.current a.menu-top{color: #fff!important;
+}
+
+#wpbody-content { margin: 20px 0 0 0;
+  padding-bottom: 65px;
+  float: left;
+  width: 100%;
+  overflow: visible!important;
+}
+.sticky-menu #adminmenuwrap { margin: 19px 0 0 0;
+  position: fixed;
+}
+
+#wpadminbar{background-color: #253245!important; }
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item {
+  padding: 0 7px 0 0;
+}
+#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar>a img { margin-right: 10px; }
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon {
+  width: 15px;
+  height: 20px;
+  margin-right: 0;
+  padding: 6px 0 5px;
+}
+
+.wp-submenu{background-color: #fff;} .wp-submenu-wrap{background-color: #fff!important;}
+
+#wpadminbar { 
+  direction: ltr;
+  color: #ccc;
+  font: 400 13px/32px "Open Sans",sans-serif;
+  height: 52px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 600px;
+  z-index: 99999;
+  background-color: ＃29293D;
+
+ 
+   box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.4);
+}
+#wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+  color: #fff; padding: 20px 0 0 0; 
+}
+#wp-admin-bar-my-account{ width:300px!important;}
+.menupop { line-height: 0.5em; margin:10px 10px 0 0!important;  }
+a.ab-item{ text-align: right;  height: 30px!important; padding:10px 10px 0 0!important;}
+
+.form-table th, .form-wrap label {
+ 
+  font-weight: 400;
+  text-shadow: none;
+  vertical-align: baseline;
+}
+p.description{  color: #fff;}
+
+.js .postbox .hndle, .js .widget .widget-top {
+  cursor: move;
+  color: #333;
+}
+
+#wpadminbar
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none!important;
+  cursor: pointer;
+}
+
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item, 
+#wpadminbar .ab-top-menu>li:hover>.ab-item, 
+#wpadminbar .ab-top-menu>li>.ab-item:focus, 
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus{
+  background-color:  #00CCCC; color: #fff;  height: 52px;
+}
+.inline-edit-row fieldset .inline-edit-group {
+    clear: both;
+    display: none;
+}
+
+#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input {
+  margin: 0 0px 0 0; 
+  padding: 0; 
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  box-shadow: 0 3px 5px rgba(0,0,0,.2);
+ background-color: #fff;
+  display: none;
+  position: absolute;
+  float: none;
+  width:300px!important;
+}
+#wp-admin-bar-user-info a{ color: #333!important;}
+#wp-admin-bar-edit-profile a{ color: #333!important;}
+#wp-admin-bar-logout a{ color: #333!important;}
+
+#wpadminbar #wp-admin-bar-user-info {
+  margin-top: 6px;
+  margin-bottom: 0px;
+  height: auto;
+  background: 0 0;
+}
+
+#wp-admin-bar-menu-toggle{
+  display: none;
+}
+#wp-admin-bar-wp-logo-default{  display: none!important;}
+#wp-admin-bar-wp-logo>.ab-item .ab-icon:before {
+  content: ''!important;  display: none;
+  top: 2px;
+}
+#wp-admin-bar-wp-logo{ 
+   
+
+}
+#wp-admin-bar-wp-logo-external{
+  display: none!important;
+}
+.menupop .hover{ 
+  display: none!important;
+}
+.ab-item{ 
+  display: none;
+}
+.ab-sub-wrapper{
+  display: none;
+}
+
+#wpadminbar .ab-icon, 
+#wpadminbar .ab-item:before, 
+#wpadminbar>#wp-toolbar>#wp-admin-bar-root-default 
+.ab-icon {
+  speak: none;
+ padding: 4px 0; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 0px;
+  display: none;
+}
+
+
+
+.ab-icon{ width: 250px!important; height: 44px!important; }
+#wp-admin-bar-site-name
+{display: none;}
+#adminmenu
+{background-color: rgb(37, 50, 69)!important; }
+#wp-admin-bar-comments
+{display: none;}
+#wp-admin-bar-new-content
+{display: none;}
+#adminmenuback
+{background-color: rgb(11,15,34)!important; }
+
+.wp-menu-name{
+
+}
+#adminmenu .opensub .wp-submenu li.current a, 
+#adminmenu .wp-submenu li.current, 
+#adminmenu .wp-submenu li.current a, 
+#adminmenu .wp-submenu li.current a:focus, 
+#adminmenu .wp-submenu li.current a:hover, 
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+
+}
+
+#adminmenu .current div.wp-menu-image:before, #adminmenu .wp-has-current-submenu div.wp-menu-image:before, #adminmenu a.current:hover div.wp-menu-image:before, #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+  color: #ddd!important;
+}
+
+h3{color: #666;}
+
+
+h3{   margin-top: 10px!important; color: #fff; }
+.col-wrap h3 {
+    margin: 12px 0px; 
+    font-size: 1.5em;}
+
+#poststuff h3 {
+  font-size: 1.5em;
+  padding: 8px 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+
+
+
+
+a:hover,
+a:focus {
+  color: #333;
+  text-decoration: none!important;
+  cursor: pointer;
+}
+
+#adminmenu div.wp-menu-image:before {
+ color: #fff!important;
+}
+
+
+input[type="button" i], input[type="submit" i], input[type="reset" i] {
+  -webkit-appearance: push-button;
+  -webkit-user-select: none;
+  white-space: pre;
+}
+
+input[type="search"] {
+  background-color: #fff;
+  border: 0;
+  height: 40px; /* 高さ40px */
+  width: 200px;
+  padding: 10 10px; 
+    border:1px solid rgb(230, 230, 230);
+
+}
+input[type="image"] {
+  border: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px; /* 高さ40px */
+  position: absolute; /* 絶対配置 */
+  left: 220px; /* 左から220px */
+  top: 0;
+}
+
+h4{ width: 100%;display: block;padding-bottom: 20px;}
+
+
+/*画面上必要のない表示　グループ
+.publish{display: none!important;}
+
+.custom_id_disp{ font-size: 14px;}
+
+.add-new-h2{display: none!important;}
+
+
+.inline {display: none!important;}
+*/
+
+/*クイック編集*/
+div.row-actions span.view{display: none!important;}
+.quickedit {display: none!important;}
+
+#quick_edit_custom_fujiyama .new{display: none;}
+
+
+#quick_custom_list_fields_fujiyama h4{ width: 100%;display: block;padding-bottom: 20px;}
+#quick_custom_list_fields_fujiyama .inline-edit-save{}
+#quick_custom_list_fields_fujiyama .inline-edit-tags{ 
+  margin-top: 0px;
+}
+#quick_custom_list_fields_fujiyama .inline-edit-col-right{ 
+  margin-top: 0px;
+}
+#quick_custom_list_fields_fujiyama .tax_input_post_tag{
+  width: 100px; 
+  height: 25px; 
+  margin: 0 0 10px 7px;
+}
+#quick_edit_custom_fujiyama fieldset .in-correspondence input[type="checkbox"] {vertical-align: middle!important;}
+
+#quick_custom_list_fields_fujiyama fieldset span.checkbox-title, .inline-edit-row fieldset span.title {
+    font-style: italic; 
+    line-height: 2.2em;
+}
+.colspanchange input[type="radio"], input[type="checkbox"] {
+    margin: -2px 10px 0px!important;
+    line-height: normal;
+}
+
+.colspanchange textarea[readonly] {
+  background-color: #;
+}
+
+#quick_custom_list_fields_fujiyama .inline-edit-row fieldset label span.title {
+    display: block;
+    float: none!important;
+    width: 5em;
+}
+
+
+.inline-edit-row fieldset label.inline-edit-tags span.title {
+    margin: 0em 0px;
+    width: auto;
+}
+
+
+#quick_custom_list_fields_fujiyama label{
+ padding: 12px 12px 12px 12px; margin-left: 5px;
+ border-radius: 4px;
+ border: 1px solid #ddd;  background-color: #fff;
+}
+/*radio button*/
+#quick_edit_custom_fujiyama input{  border-radius: 4px;}
+#quick_edit_custom_fujiyama input[type=radio], input[type=checkbox] {
+
+}
+#quick_edit_custom_fujiyama label{
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block; 
+ padding: 12px 26px 12px 12px;
+  border-radius: 4px;
+  background-color: #fff;
+  vertical-align: middle;
+  cursor: pointer; color: #333;    border: 1px solid #ddd;
+}
+
+#quick_edit_custom_fujiyama label:hover, .checkbox:hover {
+  background-color: #e2edd7; cursor: pointer; color: #333;
+}
+
+
+#quick_edit_custom_fujiyama input.readonly, input[readonly], textarea.readonly, textarea[readonly] {
+    background-color: #fff;
+}
+
+/*メイン画面の背景色*/
+#wpcontent{background-color: ;}, #wpfooter{background-color: ;}
+
+
+/*column_box ID & STATUS*/
+#custom_status_disp{ }
+.status-id{}
+.status-category{}
+.status-author{}
+.statustype{}
+.status-update{color: blue;}
+.status-dudate{color: orange;}
+#custom_status_disp{ width: auto; font-size: 16px;}
+#custom_status_disp .title{font-size: 13px!important;margin: 5px 0;}
+#custom_status_disp span{ margin-bottom:15px!important;}
+
+#custom_status_disp{  display: block!important; padding: 5px!important; font-size: 1.5em; margin:20px!important; margin-bottom: 20px!important; }
+
+
+#duplicate-action{ text-decoration: none;margin-bottom: 5px;}
+#duplicate-action a{text-decoration: none; }
+
+
+.handlediv{display: none!important;}
+
+
+
+#poststuff .inside .the-tagcloud {
+  margin:  0 ;
+  padding: 8px;
+  border: 1px solid #ddd;
+  line-height: 1.8em;
+  word-spacing: 3px;
+  -webkit-border-radius: 6px;
+  border-radius: 0px;
+}
+
+
+
+
+/*ページ全体レイアウト　↓*/
+
+
+
+
+
+
+/*ページ全体レイアウト　↑*/
+
+#adminmenu .wp-submenu {
+  list-style: none;
+  position: absolute;
+  top: -1000em;
+  left: 250px;
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+
+
+input.submitct{ cursor: pointer; width: 100px;  background: #2ea2cc;
+  border-color: #0074a2;
+
+box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  color: #fff;
+
+  }
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+ /* text-align: center;*/
+/*  white-space: nowrap;*/
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+a.label:hover,
+a.label:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+/*  display: none;*/
+}
+
+
+/*サイドバーの項目*/
+.post-com-count span {
+ 
+  height: 1.4em;
+  line-height: 1.4em;
+  min-width: .7em;
+  padding: 0 6px;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+   background-color: rgb(0,188,212);
+  color: rgb(255, 255, 255);
+}
+.post-com-count:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  border-top: 5px solid rgb(0,188,212);
+  border-right: 5px solid rgba(0, 0, 0, 0);
+}
+/*リストのレイアウトicon*/
+.view-switch a.current:before {
+  color: rgb(0,188,212);
+}
+#wp-admin-bar-my-account{ padding-top: 20px;}
+
+/*サイドバーカスタマイズ*/
+#wpcontent{
+
+  margin-left: 250px!important;
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  width: 250px!important; margin-top: 20px; 
+  background-color: rgb(34, 34, 34);
+}
+
+#adminmenu div.wp-menu-name {
+  padding: 15px 20px;
+
+}
+#adminmenu div.wp-menu-name_after {
+
+  border-top: 1px solid #131937;
+}
+
+div.wp-menu-image:before {
+  color: rgb(153, 153, 153);
+  padding: 10px 0;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+
+
+
+.icon16.icon-appearance, .icon16.icon-comments, .icon16.icon-dashboard, .icon16.icon-generic, .icon16.icon-links, .icon16.icon-media, .icon16.icon-page, .icon16.icon-plugins, .icon16.icon-post, .icon16.icon-settings, .icon16.icon-site, .icon16.icon-tools, .icon16.icon-users, .menu-icon-appearance div.wp-menu-image, .menu-icon-comments div.wp-menu-image, .menu-icon-dashboard div.wp-menu-image, .menu-icon-generic div.wp-menu-image, .menu-icon-links div.wp-menu-image, .menu-icon-media div.wp-menu-image, .menu-icon-page div.wp-menu-image, .menu-icon-plugins div.wp-menu-image, .menu-icon-post div.wp-menu-image, .menu-icon-settings div.wp-menu-image, .menu-icon-site div.wp-menu-image, .menu-icon-tools div.wp-menu-image, .menu-icon-users div.wp-menu-image {
+    background-image: none !important;font-size: 0px!important;
+}
+
+.wp-has-submenu {   background-color: rgb(11,15,34);}.wp-not-current-submenu {  background-color: rgb(37, 50, 69)!important;}
+
+
+
+
+/*METABOX  Clolums  ETC *************************************************************************/
+
+
+/*METABOX */
+
+.postbox .hndle, .stuffbox .hndle {
+  border-bottom: 0px solid #fff!important;
+}
+
+.postbox {
+  padding: 1px 0px 20px 0px;
+  margin-bottom: 20px;
+  background: #fff;color: #333;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.04);
+  opacity: 1;
+}
+/*METABOX */
+/*タグ追加ボタン */
+#tagcloud-post_tag{}
+#tagcloud-post_tag a{
+  display: block; 
+  font-size: 14px!important;
+  line-height: 18px; 
+  text-align: center; 
+  text-decoration: none;
+  padding: 5px 5px; 
+  margin: 5px; 
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  background: #ff7e28;
+  border-top: 1px solid rgb(241, 218, 54);
+}
+#tagcloud-post_tag a:hover{ 
+  display: block; 
+  font-size: 14px!important;
+  line-height: 18px; 
+  text-align: center; 
+  text-decoration: none;
+  padding: 5px 5px; 
+  margin: 5px; 
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  background: #ffaf4b;
+  border-top: 1px solid rgb(241, 218, 54);
+}
+
+div.updated, .error {
+  border-color: #0074a2; color: #333;
+}
+
+/*ページ上部のHELPボタン*/
+#contextual-help-wrap, #screen-options-wrap {
+  margin: 0;
+  padding: 8px 20px 12px;
+  position: relative;
+  border:1px solid rgb(230, 230, 230); color: #333;
+}
+/*ページ上部のHELPボタン*/
+#screen-meta-links .screen-meta-toggle {
+  position: relative;
+  top: 0;left: 3px;  border-radius: 0 0 4px 4px;
+
+  background-color: #fff;
+}
+/*ページ上部のHELPボタン*/
+#screen-meta-links a.show-settings {
+  display: block;
+  font-size: 13px;
+  height: 22px;
+  line-height: 20px; 
+  text-decoration: none;
+  z-index: 1;
+
+  cursor: pointer;
+}
+#screen-meta-links a:hover.show-settings {
+  display: block;
+  color: #2ea2cc;
+  font-size: 13px;
+  height: 22px;
+  line-height: 20px;
+  text-decoration: none!important;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+#contextual-help-link-wrap {
+  float: right;
+  height: 26px!important;
+  margin: 0 0px 0 6px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-top: none;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+}
+
+#screen-options-link-wrap{  float: right;
+  height: 24px!important;
+  margin: 0 0px 0 6px;
+  border: 1px solid #ddd;
+   
+  border-top: none;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);}
+
+#contextual-help-link-wrap{}
+/*ページ上部のHELPプレート*/
+#screen-meta {
+  display: none;
+  margin: 0 17px -1px 0;
+  position: relative;
+  background-color: #fff;
+  border: 0px solid #ddd;
+  border-top: none;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.025);
+  box-shadow: 0 1px 0 rgba(0,0,0,.025);
+}
+
+
+
+/*提出ボタンエリア　背景色*/
+#major-publishing-actions {
+	margin: 10px 10px;
+  padding: 15px 15px;
+  clear: both;
+  border: 1px solid #ddd;
+  background-color: #fff;
+
+}
+
+
+/*PLUGINS -　Indication for External******************************************************/
+
+/*post with category*/
+/*エリアボックス*/
+.category-wrap{
+/*border:1px solid rgb(230, 230, 230);*/
+box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-webkit-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-moz-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+
+}
+
+.category-wrap > .second-group{
+  background-color: #fff;
+  padding: 0px 10px 20px 10px; 
+  margin-right: 20px; margin-bottom: 50px;
+border:1px solid rgb(230, 230, 230);
+box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-webkit-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+-moz-box-shadow:rgba(113, 135, 164, 0.0666667) 0px 0px 7px 3px;
+
+}
+.category-wrap .submit{
+  margin-left: 10px;
+}
+/*post with category*/
+/*カテゴリーからの新規投稿ボタン*/
+.acf-button{
+    -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.category-wrap span{
+  display: block;
+}
+
+.category-wrap 
+/*新規投稿カテゴリーのwrap*/
+.category-wrap {
+border: solid 1px #ddd; 
+padding-left: 25px; 
+display: block; 
+margin-left: auto; 
+margin-right: auto;
+width: 97.5%;
+height: auto;
+overflow: auto;
+}
+
+.category-wrap h3{
+  color: #fff; font-size: 60px;
+  margin-top: 40px;
+
+}
+.category-wrap h4{
+  color: #333; font-size: 20px;
+  margin-left: 10px; 
+  margin-top: 40px;
+  margin-bottom :20px;
+
+}
+.category-wrap span{
+display: block; 
+margin-left: 22px; font-size: 12px; 
+margin-top: 5px;
+} 
+
+.new-post-cat-cyb{ padding: 0 2px; }
+
+.acf-button:hover {
+    border-color: #0074A2;;
+background-color:  #0074A2;
+    color: #FFF!important;
+}
+
+
+
+/*Advanced Custom Fields*/
+
+.acf_postbox p.label label {
+  color: #333333;
+  font-size: 13px;
+  line-height: 1.5em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 3px;
+  display: block;
+  vertical-align: text-bottom;
+  text-align: left;
+}
+
+/*Advanced Custom Fields*/
+/*カスタムフィールドの文字表記を修正 */
+
+table.acf_input tbody tr td.label label {
+    display: block;
+    font-size: 13px;
+    line-height: 1.4em;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px 0px 30px;
+    color: #333; word-wrap: break-word;
+}
+table.acf_input tbody tr td.label p {
+    display: block;
+    font-size: 12px;
+    padding: 0px !important;
+    margin: 3px 0px 0px !important;
+    font-style: normal;
+    line-height: 16px;
+    color: #899194; word-wrap: break-word;
+}
+
+
+#request_alert{color: rgb(255, 51, 0);}
+#request_alert.acf-field .acf-label label {color: rgb(255, 51, 0)!important;}
+
+
+.acf-button {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  height: 28px;
+  padding: 0 11px 1px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  background: #2EA2CC;
+  border: #0074A2 solid 1px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+    -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+#acf_options .label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+#acf_options tbody{width: 604px!important; }
+
+#e_mail_cc{}
+#e_mail_cc .save_btn{ float: right; }
+
+/*Subscribe2*/
+
+#subscribe2{display: none!important; }
+
+/* FOOTER -　Indication for External******************************************************/
+
+#footer-thankyou{display: none;}
+
+
+div#respond{display: none!important; padding-bottom: 20px;display: block;}
+#acMenu .comment-respond{display: none!important;}
+
+
+.acf-postbox > h3 > span{display: none!important; }
+
+#titlediv #title-prompt-text {
+    color: #777;
+    position: absolute;
+    font-size: 1.7em;
+    padding: 5px 10px!important;
+}
+.option-counts select {
+  padding: 0px; padding-left: 5px;
+  line-height: 28px;
+  height: 28px; width: 70px;
+  vertical-align: middle;
+}
+
+select{ 
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+/*IE 10*/
+select::-ms-expand {
+    display: none;
+}
+
+select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    text-indent: .01px; /*Firefox用*/
+    text-overflow: ""; /*Firefox用*/
+
+}
+.wp-admin select {
+  padding: 0px; padding-left: 5px;
+  line-height: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.tablenav .actions select {
+    float: left;
+    margin-right: 6px;
+    max-width: 200px;
+    padding-right: 35px;
+
+
+}
+
+select{
+  
+    height: 45px;
+    font-size: 100%;
+    padding: 12px 50px 12px 12px;
+    border: 1px solid #B3B3B3;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: .01px;
+    text-overflow: "";
+    background: #FFF url(select_arrow.jpg) no-repeat right;
+}
+
+
+.widefat th input {
+  margin: 0 0 0 8px;
+  padding: 0;
+  vertical-align: text-top; border-radius: 4px;
+}
+.widefat .check-column {
+  width: 2.2em;
+  padding: 6px 0 25px;
+  vertical-align: middle;
+}
+
+.widefat td, .widefat th {
+  overflow: hidden;
+  color: #555;
+  vertical-align: middle;
+}
+input#save-post {
+  float: left;
+  border-radius: 4px;border-radius: 4px;
+}
+.row-actions {
+  color: #ddd;
+  font-size: 13px;
+  visibility: hidden;
+  padding: 2px 0 0;
+}
+
+
+.row-actions span{ float: left;}
+
+/*ここからradio button----------------------------------------------------作業中*/
+
+#start_radio input[type=radio], input[type=checkbox] {
+    margin: 5px 4px 5px;
+    line-height: normal;
+}
+
+#start_radio label{float: none; cursor: pointer; margin-right: 10px; font-size: 16px;}
+
+#start_radio label{
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block; height: auto;
+ 
+ padding: 12px 12px 12px 12px; width: 95%; margin-bottom: 10px; 
+  border-radius: 4px;
+  background-color: #e2edd7;
+  vertical-align: middle;
+  cursor: pointer; color: #333;
+}
+
+#start_radio label:hover, .checkbox:hover {
+background-color: rgb(37, 50, 69)!important; cursor: pointer; color: #fff;
+}
+
+/*お問い合わせ*/
+.contactbox {display: none!important;}
+#start_radiocontact_box{ 
+  width: 980px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+#start_radiocontact input[type=radio] {
+    margin: 4px 4px 5px;
+    line-height: normal;
+}
+
+#start_radiocontact label{float: right; text-align: left;   cursor: pointer;  font-size: 14px;}
+#start_radiocontact label{
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block; height: 50px;
+ 
+ padding: 12px 12px 12px 12px; width: 963px; margin: 20px 10px;
+  border-radius: 4px;
+  background-color: #e2edd7;
+  vertical-align: middle;
+  cursor: pointer; color: #333;
+}
+
+#start_radiocontact label:hover{
+background-color: rgb(37, 50, 69)!important; cursor: pointer; color: #fff;
+}
+
+
+/*メインフォーム*/
+.acf-input input{  border-radius: 4px;}
+.acf-input input[type=radio], input[type=checkbox] {
+
+}
+.acf-input label{float: left; cursor: pointer; margin-right: 20px; font-size: 14px;}
+
+.acf-input label{
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block; 
+ 
+ padding: 12px 12px 12px 12px; width: 100%; margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #fff;
+  vertical-align: middle;
+  cursor: pointer; color: #333;    border: 1px solid #ddd;
+}
+
+.acf-input label:hover, .checkbox:hover {
+  background-color: #e2edd7; cursor: pointer; color: #333;
+}
+
+
+/*サイドボックス ステータス metabox*/
+
+#mytaxonomy_id{}
+
+#mytaxonomy_id input[type=radio], input[type=checkbox] {
+
+}
+
+#mytaxonomy_id label{
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block; 
+ 
+ padding: 5px 5px ; 
+  border-radius: 4px;
+  background-color: #fff;
+  vertical-align: middle;
+  cursor: pointer; color: #333; border: 1px solid #ddd;
+}
+
+#mytaxonomy_id label:hover, .checkbox:hover {
+  background-color: #e2edd7; cursor: pointer; color: #333;
+}
+
+#mytaxonomy_id input[type="checkbox"] {
+  margin: 0px 0px 0px!important;
+  line-height: normal;
+}
+#mytaxonomy_id .statusbox_put{ display: block; color: #0074a2; }
+
+
+/*サイドボックス　カテゴリーボックス metabox*/
+
+#category-all label{
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  position: relative;
+  display: inline-block; 
+ padding: 5px 5px ; 
+  border-radius: 4px;
+  background-color: #fff;
+  vertical-align: middle;
+  cursor: pointer; color: #333; border: 1px solid #ddd; width: 100%; margin-bottom:5px;  
+}
+
+#category-all label:hover, .checkbox:hover {
+  background-color: #e2edd7; cursor: pointer; color: #333;
+}
+
+#category-all input[type="checkbox"] {
+  margin: 7px 0px 0px!important;
+  line-height: normal;
+}
+
+.row-actions > .edit a{
+  box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  background-color: #f7f7f7 ; color: #333;border: 1px solid #B3B3B3;
+  padding: 2px;
+  text-align: center;
+  border-radius: 4px;
+
+}
+
+ .row-actions > .edit :hover, .checkbox:hover {
+  background-color: #7C7C7C; cursor: pointer; color: #fff;
+}
+
+
+.row-actions > .hide-if-no-js a{
+    box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  background-color: #f7f7f7 ; color: #333;border: 1px solid #B3B3B3;
+  padding: 2px;
+  text-align: center;
+  border-radius: 4px;
+  
+}
+  
+.row-actions > .hide-if-no-js :hover, .checkbox:hover {
+  background-color: #7C7C7C; cursor: pointer; color: #fff;
+}
+
+.row-actions > .trash a{display: none;
+   background-color: #0074A2;
+  padding: 2px;
+  text-align: center; color: #fff;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+/*first list line*/
+
+#quick_custom_list_fields_fujiyama
+{  background-color: #c6ccd1;}
+
+#term_order_list li.lineitem{color: #333!important;}
+
+/*
+.alt, .alternate {
+    background-color: #fff;
+      box-sizing: border-box;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  color: #fff;
+   border-radius: 20px 0px 0px 0px ;
+}
+.alt, .alternate a{color: #333; background-color: #ddd; padding:10px; }
+.alt, .alternate {color: #333;}
+.widefat td, .widefat th {
+    overflow: hidden;
+    color: #fff;
+    vertical-align: middle;
+}
+
+#the-list { background-color: #fff; border-radius: 20px 0px 0px 0px ;}
+
+*/
+
+.new-post-cat-cyb .submit_box{ 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 1000px;
+}
+.category_submit .button-primary{
+  width: 960px; 
+  padding:30px 0 30px 0!important; margin-left: 17px;
+  line-height: 0px; 
+  vertical-align: middle!important; 
+  font-size: 30px; color: #fff; }
+
+#footer-left{display: none!important;}
+
+
+#cpt_info_box {
+    padding: 0px 10px;
+    border: 1px dashed #6AADCC;
+    background-color: #FFF;
+    color: #333;
+    margin-top: 10px;
+    box-shadow: 1px 1px 7px rgba(50, 50, 50, 0.17);
+}
+.wp-list-taxonomy tr {
+    background-color: #FCFCFC;
+     color: #333;
+}
+
+#acf-col-side {
+    float: right;
+    width: 281px;
+    padding-top: 45px !important;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px; margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-table{margin-top:60px; }
+.form-table, .form-table td, .form-table td p, .form-table th, .form-wrap label {
+    font-size: 14px;
+  
+}
+
+#col-right {
+    width: 65%;
+    margin-top: 10px;
+}
+.wrap form{ }
+.wrap h3{ padding-top: 10px;margin-left: 10px; color: #333; }
+
+#accordion .ui-accordion-content {
+    background: #FAFAFA none repeat scroll 0% 0%;
+    padding: 14px;
+     color: #333;
+}
+
+.code, code {
+    font-family: ;
+    direction: ltr;
+    unicode-bidi: embed;color: #333;
+}
+
+p.submit {
+    text-align: left;
+    max-width: 100%;
+    margin-top: 20px;
+    padding-top: 10px; padding-left: 10px;
+}
+
+.status-checklist{z-index: 3;}
+#taxonomy-status{z-index: 2;}
+.messagepopup{}
+.discription_to{margin-left: 30px; padding: 0 5px;
+display: none; z-index: 1; position: absolute; background-color: #fff; color: 333; border: 1px  #333; width: 200px; 
+   border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */  
+    opacity: 0.8;
+}
+.messagepopup:hover .discription_to{ border: 1px solid #B3B3B3;
+display : block;
+}
+
+ul.cat-checklist {
+    height: auto;
+    border: 1px solid #DDD;
+  overflow-y: visible!important;
+    padding: 5px 5px;
+    margin: 0px 0 50px 0;
+    background-color: #FFF;
+}
+.category-checklist{display: none;}
+.inline-edit-categories-label span{display: none;}
+
+div .inline-edit-col-center span:first-of-type {display: none;}
+span.inline-edit-categories-label {
+  display: block;
+  margin: 0 0!important; font-weight: bold;
+}
+.inline-edit-row h4 {
+ margin: 0 0!important;
+  padding: 0;
+  line-height: 23px;
+}
+
+
+
+@media only screen and (max-width:782px) {
+
+   #wpcontent {
+    margin-left: 0px !important;
+ 
+}
+
+
+#wp-toolbar > ul > li {
+    display: block;
+}
+{display: none;}
+
+#wpadminbar .ab-icon{ display: block;}
+
+#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+   display: none;
+}
+#wpadminbar #wp-admin-bar-site-name a.ab-item {
+   display: none;
+}
+#wp-admin-bar-new-content{display: none!important;}
+#wp-admin-bar-comments{display: none!important;}
+
+}
+
+#wpadminbar {
+    direction: ltr;
+    color: #CCC;
+    font: 400 13px/32px "Open Sans",sans-serif;
+    height: 52px!important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-width: 600px;
+    z-index: 99999; 
+    box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.4);
+}
+#wpadminbar .ab-icon, 
+#wpadminbar .ab-item:before, 
+#wpadminbar>#wp-toolbar>#wp-admin-bar-root-default 
+.ab-icon {
+  speak: none;
+ padding: 4px 0; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 0px;
+  display: none;   
+}
+#custom-heade-logo-wrap{ position: fixed;
+  z-index: 10000000; 
+  display: block;
+  width: 250px; 
+ /* background-color: #333;*/
+  top:-0px; height: 52px; margin-bottom: 0px;
+}
+
+  #custom-heade-logo{
+    padding: 20px 10px; 
+  font-size: 30px; 
+  color: #fff;
+}
+
+
+
+#wpadminbar li#wp-admin-bar-updates {
+    display: none;
+}
+
+.wp-responsive-open #wpbody {
+  /* right: -190px; */
+}
+
+.column-comment>.row-actions { display: none;  
+    color: #ddd;
+    font-size: 13px;
+    visibility: visible;
+}
+.row-actions {  
+    color: #ddd;
+    font-size: 13px;
+    visibility: visible;
+}
+
+.clone{display: none;}
+
+.edit_as_new_draft{display: none;}
+/* .iedit{ background-color: #293b51;}*/
+ alt, .alternate {
+    background-color: #EAEAEA;
+}
+
+ .iedit:hover{
+  background-color: #c6ccd1;
+}
+  .iedit td:hover{
+    background-color: #ddd; color: #333;
+  }
+    .iedit td a:hover{
+      background-color: #ddd;
+      color: #333;
+    }
+.fixed .column-comments a {
+    float: left;
+    margin-left: 5px;
+}
+
+
+
+/*clearfix*/
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}  
+  
+.clearfix { display: inline-table; }  
+  
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */  
+
+
+

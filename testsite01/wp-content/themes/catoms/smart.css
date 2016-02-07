@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+
+body { margin: 0; padding: 0; color: #222; font-size : 13px; font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+.header { width: 100%; max-width: 960px; margin: 0 auto; padding: 30px 0 0; }
+h1 { margin: 0; padding: 0 10px 10px; font-size: 24px; }
+.main {
+  clear: both;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background: #999;
+  text-align: center;
+}
+
+
+
+.menu{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+.menu li{
+  display: block;
+  float: left;
+  width: 12.5%;
+  margin: 0;
+  padding: 0; }
+.menu li a{
+  display: block;
+  padding: 12px 0 10px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.menu li a:hover{
+  background: #444;
+}
+#toggle{ 
+ display: none;
+}
+
+/****************************************
+
+header
+
+*****************************************/
+
+#logo{ 
+
+}
+
+#logo a{
+border: none;
+}
+
+#description {
+margin-top: 0;
+color: #777;
+}
+
+#searchform{
+position: relative; float:right;
+margin-top: 0px;
+
+}
+#s{
+padding: 6px 20% 6px 5%;
+width: 50%;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+font-size: 14px;
+}
+#header .alignright {
+    width: 200px; position:absolute; right:5px; top:1px;
+}
+
+#searchsubmit{
+position: absolute;
+top: 0;
+right: 0;
+width: 30px;
+height: 26px;
+border: none;
+background: url(images/search.png) no-repeat 50% 130%;
+
+}
+#Hader-image img{ width:100%; height:auto;}	
+
+
+@media only screen and (max-width: 768px) {
+    .menu li{
+    width: 25%;
+    border-bottom: 1px solid #444;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .menu{
+    display: none;
+  }
+  .menu li{
+    width: 100%;
+  }
+  #toggle{
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #222;
+  }
+  #toggle a{
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  #toggle:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #fff;
+  }
+  #toggle a:before, #toggle a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    background: #222;
+  }
+  #toggle a:before{
+    margin-top: -6px;
+  }
+  #toggle a:after{
+    margin-top: 2px;
+  }
+}
